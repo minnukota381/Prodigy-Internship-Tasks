@@ -14,6 +14,8 @@ This repository contains my solutions to the tasks assigned during the web devel
 
 [Stopwatch Web Application](https://github.com/minnukota3811/Prodigy_WD_02)
 
+![Task 2 Screenshot](Assets/task2.png)
+
 ### Task 3
 
 [Tic-Tac-Toe Web application](https://github.com/minnukota381/Prodigy_WD_03)
