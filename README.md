@@ -8,7 +8,7 @@ This repository contains my solutions to the tasks assigned during the web devel
 
 [Responsive Landing Page](https://github.com/minnukota381/Prodigy_WD_01)
 
-![Task 1 Screenshot](assets/task1.png)
+![Task 1 Screenshot](Assets/task1.png)
 
 ### Task 2
 
