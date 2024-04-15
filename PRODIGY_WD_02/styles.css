@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+  background: linear-gradient(to bottom, #000000, #404040);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.heading {
+  color: #fff;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.circle-timer {
+  width: 250px;
+  height: 250px;
+  background-color: #000;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px rgba(255, 132, 0, 0.5);
+}
+
+.timer-text {
+  font-size: 48px;
+  font-weight: bold;
+  color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.btn-container {
+  margin-top: 30px;
+  display: flex;
+}
+
+.btn {
+  width: 100px;
+  height: 100px;
+  background-color: #1c1c1e;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+  transition: background-color 0.2s ease-in-out;
+  box-shadow: 0 4px 8px rgba(203, 148, 8, 0.3);
+}
+
+.btn:hover {
+  background-color: #2c2c2e;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn-text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+}
