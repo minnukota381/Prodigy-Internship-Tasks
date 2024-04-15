@@ -12,17 +12,17 @@ This repository contains my solutions to the tasks assigned during the web devel
 
 #### Task 2:
 
-[https://github.com/minnukota3811/Prodigy_WD_02](https://github.com/minnukota3811/Prodigy_WD_02)
+[Stopwatch Web Application](https://github.com/minnukota3811/Prodigy_WD_02)
 
 #### Task 3:
 
-[https://github.com/minnukota381/Prodigy_WD_03](https://github.com/minnukota381/Prodigy_WD_03)
+[Tic-Tac-Toe Web application](https://github.com/minnukota381/Prodigy_WD_03)
 
 #### Task 4:
 
-[https://github.com/minnukota381/Prodigy_WD_04](https://github.com/minnukota381/Prodigy_WD_04)
+[Personal Portfolio website](https://github.com/minnukota381/Prodigy_WD_04)
 
 #### Task 5:
 
-[https://github.com/minnukota381/Prodigy_WD_05](https://github.com/minnukota381/Prodigy_WD_05)
+[Weather App](https://github.com/minnukota381/Prodigy_WD_05)
 
