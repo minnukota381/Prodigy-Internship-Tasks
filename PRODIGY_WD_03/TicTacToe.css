@@ -1,0 +1,69 @@
+body {
+    background: linear-gradient(to bottom, #00008b, #0000ff); /* Dark blue gradient bg */
+    color: #fff; /* Text color */
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    height: 100vh; /* Full height of viewport */
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif; /* Change font */
+}
+
+.card {
+    background-color: #000000; /* Solid white background for the card */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 16px rgba(255, 255, 255, 0.2); /* Increased box shadow */
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    font-size: 50px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 16px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+    line-height: 100px; /* Vertically center text */
+}
+
+.square:hover {
+    background-color: rgba(18, 1, 1, 0.2);
+    transform: scale(1.1);
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 60px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 50px;
+}
+
+.highlight {
+    color: #ffc107; /* Change color to yellow */
+    font-weight: bold;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.button-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-container button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
