@@ -20,6 +20,8 @@ This repository contains my solutions to the tasks assigned during the web devel
 
 [Tic-Tac-Toe Web application](https://github.com/minnukota381/Prodigy_WD_03)
 
+![Task 3 Screenshot](Assets/task3.png)
+
 ### Task 4
 
 [Personal Portfolio website](https://github.com/minnukota381/Prodigy_WD_04)
