@@ -32,7 +32,4 @@ This repository contains my solutions to the tasks assigned during the web devel
 
 ![Weather App](Assets/weather1.png)
 
-(Assets/wearher2.png)
-
-## Thank You
-
+![Weather App](Assets/weather2.png)
