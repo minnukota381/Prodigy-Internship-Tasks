@@ -29,3 +29,10 @@ This repository contains my solutions to the tasks assigned during the web devel
 ### Task 5
 
 [Weather App](https://github.com/minnukota381/Prodigy_WD_05)
+
+![Weather App](Assets/weather1.png)
+
+(Assets/wearher2.png)
+
+## Thank You
+
