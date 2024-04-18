@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background-color: #ffffff;
+}
+
+/* Scrollbar styles */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: #d6d2c9;
+}
+::-webkit-scrollbar-thumb {
+    background: #0e45dd;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #4070f4;
+}
+/* Your existing CSS styles for the navigation menu */
+.navbar {
+  position: fixed;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 998;
+  transition: all 0.3s ease;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: transparent;
+}
+
+.blur {
+  filter: blur(5px);
+}
+
+.nav{
+  position:fixed;
+  width: 100%;
+  padding: 20px 0;
+  z-index: 998;
+  transition: all 0.3s ease;
+  font-family: 'Ubuntu', sans-serif;
+  background-color: transparent;
+}
+
+nav.sticky{
+  background: #4070f4;
+  padding: 13px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+nav.sticky.shadow{
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+nav .navbar{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+nav .navbar .logo a{
+  font-weight: 500;
+  font-size: 40px;
+  color: #4070f4;
+  padding: 8px 0;
+}
+nav.sticky .navbar .logo a{
+  color: #fff;
+}
+nav .navbar .menu{
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+nav .navbar .menu li{
+  list-style: none;
+  margin: 0 16px;
+}
+.navbar .menu a{
+  font-size: 20px;
+  font-weight: 500;
+  color: #0E2431;
+  padding: 10px 0;
+  transition: all 0.4s ease;
+  text-decoration: none;
+}
+.navbar .menu a:hover{
+  color: #4070f4;
+  text-decoration: underline;
+}
+nav.sticky .menu a{
+  color: #FFF;
+  text-decoration: underline;
+}
+nav.sticky .menu a:hover{
+  color: #0E2431;
+  text-decoration: none;
+}
+.navbar .media-icons a{
+  color: #4070f4;
+  font-size: 20px;
+  margin: 0 10px;
+}
+nav.sticky .media-icons a{
+  color: #FFF;
+}
+/* blur effect */
+nav.blur {
+  filter: blur(5px);
+}
+/* home section styling */
+.home {
+  height:100vh;
+  width: 100%;
+  background: url("images/background.png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Ubuntu', sans-serif;
+}
+.home .home-content{
+  width: 90%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.home .text-one{
+  font-size: 25px;
+  color:rgb(255, 128, 0);
+}
+.home .text-two{
+  color:rgb(23, 23, 238);
+  font-size: 50px;
+  font-weight: 600;
+  margin-left:-3px;
+}
+.home .text-three{
+  color: rgb(11, 133, 240);
+  font-size:50px;
+  font-weight: 600;
+  margin-left: 3px;
+}
+.home .img-fluid{
+  width: 200px;
+  height:200px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+/* About Section */
+.section{
+  padding-top: 50px;
+  justify-content: center;
+  align-items: center;
+}
+section .content{
+  width: 80%;
+  margin: 0 auto;
+  font-family: 'Poppins', sans-serif;
+}
+.about .about-details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+section .title span{
+  color: #0E2431;
+  font-size: 30px;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 8px;
+}
+section .title ::before,
+section .title ::after{
+  content: '';
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  background: #4070f4;
+  left: 0;
+  bottom: 0;
+}
+section .title span::after{
+  bottom: -7px;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+section p{
+  text-align: justify;
+}
+
+/* about section */
+.about .img-fluid {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+
+/* Skills section */
+.skills {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+}
+
+.skills .content {
+  padding: 40px 0;
+}
+
+.skills .svg-icon {
+  display: flex;
+  width: 80px;
+  height: 80px;
+  padding: 12px;
+  border: 2px solid black;
+  border-radius: 16px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.projects-details .card {
+  transition: all 0.3s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  padding: 25px; /* Adjust the padding value as needed */
+  text-align: justify; /* Justify text inside card */
+}
+
+.projects-details .card:hover {
+  transform: translateY(-5px); /* Add hover effect */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add hover shadow effect */
+}
+.projects img{
+  max-width: 50%;
+  height: auto;
+  border-radius: 12px;
+  margin: 10px 0;
+}
+.projects-details .card .card-body {
+  padding: 10px;
+  border-radius: 12px;
+  text-align: justify; /* Justify text inside card's body */
+}
+
+
+/* Footer */
+
+footer {
+  background: #222;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+footer .text {
+  color: #fff;
+  font-size: 18px;
+  text-align: center;
+}
+
+footer .text span a {
+  font-weight: 500;
+  color: #FFF;
+  text-decoration: none;
+}
+
+footer .text span a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  padding: 1.5rem 0;
+}
+
+.footer p {
+  margin-bottom: 0;
+}
+
+.social-links {
+  line-height: 1;
+}
+
+.social-links a {
+  color: inherit;
+}
+/* Scroll TO Top Button CSS */
+/* .scroll-button a{
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  color: #fff;
+  background: #4070f4;
+  padding: 7px 12px;;
+  font-size: 18px;
+  border-radius: 6px;
+  box-shadow: rgba(0, 0, 0, 0.15);
+  display: none;
+} */
+
+/* Responsive Media Query */
+/* @media (max-width: 1190px) {
+  section .content{
+    width: 85%;
+  }
+}
+@media (max-width: 1000px) {
+  .about .about-details{
+    justify-content: center;
+    flex-direction: column;
+  }
+  .about .about-details .left{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .about-details .right{
+    width: 90%;
+    margin: 40px 0;
+  }
+  .projects .boxes .box{
+    margin: 20px 0;
+    width: calc(100% / 2 - 20px);
+  }
+}
+@media (max-width: 900px) {
+  .about .left img{
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 750px) {
+  nav .navbar{
+    width: 90%;
+  }
+  nav .navbar .menu{
+    position: fixed;
+    left: -100%;
+    top: 0;
+    background: #0E2431;
+    height: 100vh;
+    max-width: 400px;
+    width: 100%;
+    padding-top: 60px;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.5s ease;
+  }
+  .navbar.active .menu{
+    left: 0;
+    
+  }
+  nav .navbar .menu a{
+    font-size: 23px;
+    display: block;
+    color: #fff;
+    margin: 10px 0;
+  }
+  nav.sticky .menu a:hover{
+    color: #4070f4;
+  }
+  nav .navbar .media-icons{
+    display: none;
+  }
+  nav .menu-btn,
+  .navbar .menu .cancel-btn{
+    display: block;
+  }
+  .home .text-two{
+    font-size: 65px;
+  }
+  .home .text-three{
+    font-size: 35px;
+  }
+  .skills .skills-details{
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .skills-details .text{
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .skills-details .boxes{
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .projects .boxes .box{
+    margin: 20px 0;
+    width: 100%;
+  }
+  .contact .text{
+    width: 100%;
+}
+}
+
+@media (max-width: 500px){
+  .home .text-two{
+    font-size: 55px;
+  }
+  .home .text-three{
+    font-size: 33px;
+  }
+  .skills-details .boxes .per{
+    font-size: 50px;
+    color: #4070f4;
+  }
+} */
