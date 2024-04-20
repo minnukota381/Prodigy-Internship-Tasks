@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -8,7 +9,7 @@
   font-family: 'Poppins', sans-serif;
 }
 body{
-  background-color: #ffffff;
+  background-color: #000000;
 }
 
 /* Scrollbar styles */
@@ -38,7 +39,18 @@ body{
   font-family: 'Ubuntu', sans-serif;
   background-color: transparent;
 }
-
+.navbar .navbar-brand {
+  font-weight: 500;
+  font-size: 40px;
+  color: #ff7300;
+  font-family: "Pacifico", cursive;
+  padding: 8px 0;
+  transition: all 0.3s ease;
+  margin-left: 20px;
+  &:hover {
+    color: #4070f4;
+  }
+}
 .blur {
   filter: blur(5px);
 }
@@ -54,7 +66,7 @@ body{
 }
 
 nav.sticky{
-  background: #4070f4;
+  background: #051951;
   padding: 13px 0;
   position: sticky;
   top: 0;
@@ -70,6 +82,21 @@ nav .navbar{
   align-items: center;
   margin: auto;
 }
+.navbar .nav-item .nav-link{
+  color: #9192be;
+  font-size: 18px;
+  font-weight: 800;
+  transition: color 0.3s ease;
+}
+
+.navbar .nav-item .nav-link:hover{
+  color: #4070f4;
+  text-decoration: underline;
+  text-decoration-skip-ink: auto;
+  transition: text-decoration-color 0.3s ease;
+  text-decoration-color: #4070f4;
+}
+
 nav .navbar .logo a{
   font-weight: 500;
   font-size: 40px;
@@ -120,6 +147,7 @@ nav.sticky .media-icons a{
 nav.blur {
   filter: blur(5px);
 }
+
 /* home section styling */
 .home {
   height:100vh;
@@ -184,7 +212,7 @@ section .title{
   margin-bottom: 40px;
 }
 section .title span{
-  color: #0E2431;
+  color: #cfd3d5;
   font-size: 30px;
   font-weight: 600;
   position: relative;
@@ -210,6 +238,7 @@ section p{
   text-align: justify;
 }
 
+
 /* about section */
 .about .img-fluid {
   width: 200px;
@@ -217,14 +246,34 @@ section p{
   border-radius: 50%;
   margin-right: 1rem;
 }
+.about{
+  padding: 50px 0;
+}
+.about-title{
+  font-size: 2.5rem;
+  color: #ffffff;
+}
+.about-img{
+  height: 200px;
+  border-radius: 50%;
+}
+.about-topic{
+  font-size: 1.5rem;
+  color: #343a40;
+  margin-top: 10px;
+}
+.about-p{
+  line-height: 1.5;
+  color: #6c757d;
+  margin-top: 10px;
+}
 
 /* Skills section */
 .skills {
   padding: 40px 0;
-  display: flex;
   flex-direction: column;
-  align-items: center; /* Center horizontally */
-  justify-content: center; /* Center vertically */
+  align-items: center; 
+  justify-content: center; 
 }
 
 .skills .content {
@@ -232,27 +281,28 @@ section p{
 }
 
 .skills .svg-icon {
-  display: flex;
   width: 80px;
   height: 80px;
   padding: 12px;
-  border: 2px solid black;
+  border: 2px solid rgb(220, 220, 220);
   border-radius: 16px;
-  align-items: center;
-  justify-content: center;
   margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .projects-details .card {
   transition: all 0.3s ease;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow effect */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
+  border-radius: 25px;
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center horizontally */
-  justify-content: center; /* Center vertically */
-  padding: 25px; /* Adjust the padding value as needed */
-  text-align: justify; /* Justify text inside card */
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  text-align: justify;
 }
 
 .projects-details .card:hover {
@@ -425,6 +475,20 @@ footer .text span a:hover {
     width: 100%;
 }
 }
+*/
+
+.skills .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills .col-md-3 {
+  flex: 20% 20% 0;
+  max-width: 25%;
+  text-align: center;
+}
 
 @media (max-width: 500px){
   .home .text-two{
@@ -433,8 +497,23 @@ footer .text span a:hover {
   .home .text-three{
     font-size: 33px;
   }
-  .skills-details .boxes .per{
-    font-size: 50px;
-    color: #4070f4;
+  .about-details .col-md-4 {
+    justify-content: center;
   }
-} */
+      .svg-icon {
+      margin-bottom: 5px;
+    }
+}
+@media (max-width: 576px) {
+  .svg-icon {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    margin-bottom: 5px;
+  }
+  .skills .col-md-3 {
+    flex: 0 0 0%; 
+    max-width: 50%;
+  }
+  
+}
