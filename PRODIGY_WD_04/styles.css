@@ -149,6 +149,7 @@ nav.blur {
   filter: blur(5px);
 }
 
+
 /* home section styling */
 .home {
   height:100vh;
@@ -338,12 +339,12 @@ section p{
   align-items: center;
   justify-content: center;
   padding: 25px;
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 .projects-details .card:hover {
-  transform: translateY(-5px); /* Add hover effect */
-  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Add hover shadow effect */
+  transform: translateY(-5px);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
 }
 .projects img{
   max-width: 50%;
@@ -354,7 +355,7 @@ section p{
 .projects-details .card .card-body {
   padding: 10px;
   border-radius: 12px;
-  text-align: justify; /* Justify text inside card's body */
+  text-align: justify;
 }
 
 
