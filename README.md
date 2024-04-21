@@ -26,6 +26,9 @@ This repository contains my solutions to the tasks assigned during the web devel
 
 [Personal Portfolio website](https://github.com/minnukota381/Prodigy_WD_04)
 
+![Portfolio](Assets/portfolio.gif)
+
+
 ### Task 5
 
 [Weather App](https://github.com/minnukota381/Prodigy_WD_05)
