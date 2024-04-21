@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Bebas+Neue&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -9,7 +10,7 @@
   font-family: 'Poppins', sans-serif;
 }
 body{
-  background-color: #000000;
+  background-color: #ffffff;
 }
 
 /* Scrollbar styles */
@@ -40,10 +41,10 @@ body{
   background-color: transparent;
 }
 .navbar .navbar-brand {
-  font-weight: 500;
+  font-weight: 900;
   font-size: 40px;
-  color: #ff7300;
-  font-family: "Pacifico", cursive;
+  color: #c15904;
+  font-family: "Allura", cursive;
   padding: 8px 0;
   transition: all 0.3s ease;
   margin-left: 20px;
@@ -55,53 +56,57 @@ body{
   filter: blur(5px);
 }
 
-.nav{
-  position:fixed;
+.nav {
+  position: fixed;
   width: 100%;
   padding: 20px 0;
   z-index: 998;
   transition: all 0.3s ease;
   font-family: 'Ubuntu', sans-serif;
-  background-color: transparent;
+  background-color: #ffffff;
 }
 
-nav.sticky{
-  background: #051951;
+
+nav.sticky {
+  background: #ffffff;
   padding: 13px 0;
   position: sticky;
   top: 0;
   z-index: 999;
 }
-nav.sticky.shadow{
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-nav .navbar{
+
+nav .navbar {
   width: 90%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: auto;
 }
-.navbar .nav-item .nav-link{
-  color: #9192be;
-  font-size: 18px;
-  font-weight: 800;
-  transition: color 0.3s ease;
+.navbar .nav-item {
+  display: flex;
+  align-items: center;
 }
 
-.navbar .nav-item .nav-link:hover{
+.navbar .nav-item .nav-link{
+  color: #000000;
+  display: inline-block;
+  line-height: 1.5;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;  
+  margin-right: 40px;
+  text-decoration: none;
+  padding: 10px 0;
+  font-size: 25px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  margin-left: 10px;
+}
+
+.navbar .nav-item .nav-link:hover {
   color: #4070f4;
   text-decoration: underline;
   text-decoration-skip-ink: auto;
-  transition: text-decoration-color 0.3s ease;
-  text-decoration-color: #4070f4;
-}
-
-nav .navbar .logo a{
-  font-weight: 500;
-  font-size: 40px;
-  color: #4070f4;
-  padding: 8px 0;
+  transition: color 0.3s ease, text-decoration 0.3s ease;
 }
 nav.sticky .navbar .logo a{
   color: #fff;
@@ -152,7 +157,6 @@ nav.blur {
 .home {
   height:100vh;
   width: 100%;
-  background: url("images/background.png") no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -171,7 +175,7 @@ nav.blur {
   color:rgb(255, 128, 0);
 }
 .home .text-two{
-  color:rgb(23, 23, 238);
+  color:rgb(4, 4, 113);
   font-size: 50px;
   font-weight: 600;
   margin-left:-3px;
@@ -187,6 +191,29 @@ nav.blur {
   height:200px;
   border-radius: 50%;
   margin-bottom: 20px;
+}
+
+.home .social-links {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.home .social-links a {
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+  font-size: 20px;
+}
+
+.home .social-links a:hover {
+  transform: scale(1.2);
+}
+.home .social-links a:hover i {
+  transform: scale(1.1);
 }
 
 /* About Section */
@@ -212,7 +239,7 @@ section .title{
   margin-bottom: 40px;
 }
 section .title span{
-  color: #cfd3d5;
+  color: #000000;
   font-size: 30px;
   font-weight: 600;
   position: relative;
@@ -224,7 +251,7 @@ section .title ::after{
   position: absolute;
   height: 3px;
   width: 100%;
-  background: #4070f4;
+  background: #9d0505;
   left: 0;
   bottom: 0;
 }
@@ -232,7 +259,7 @@ section .title span::after{
   bottom: -7px;
   width: 70%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translateX(-100%);
 }
 section p{
   text-align: justify;
@@ -291,7 +318,20 @@ section p{
   justify-content: center;
   align-items: center;
 }
+.skills .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
 
+.skills .col-md-3 {
+  flex: 20% 20% 0;
+  max-width: 25%;
+  text-align: center;
+}
+
+/* Projects section */
 .projects-details .card {
   transition: all 0.3s ease;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -357,15 +397,8 @@ footer .text span a:hover {
   margin-bottom: 0;
 }
 
-.social-links {
-  line-height: 1;
-}
-
-.social-links a {
-  color: inherit;
-}
 /* Scroll TO Top Button CSS */
-/* .scroll-button a{
+.scroll-button a{
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -376,10 +409,10 @@ footer .text span a:hover {
   border-radius: 6px;
   box-shadow: rgba(0, 0, 0, 0.15);
   display: none;
-} */
+}
 
 /* Responsive Media Query */
-/* @media (max-width: 1190px) {
+@media (max-width: 1190px) {
   section .content{
     width: 85%;
   }
@@ -475,20 +508,6 @@ footer .text span a:hover {
     width: 100%;
 }
 }
-*/
-
-.skills .row {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-}
-
-.skills .col-md-3 {
-  flex: 20% 20% 0;
-  max-width: 25%;
-  text-align: center;
-}
 
 @media (max-width: 500px){
   .home .text-two{
@@ -515,5 +534,17 @@ footer .text span a:hover {
     flex: 0 0 0%; 
     max-width: 50%;
   }
-  
+  .home .social-links {
+    display: block;
+    text-align: center;
+    margin-top: 10px; /* Adjust margin as needed */
+  }
+
+  .home .social-links a {
+    display: inline-block;
+    margin: 0 5px; /* Adjust margin between icons */
+  }
+.home .social-links a:hover {
+    transform: scale(1.2);
+}
 }
