@@ -1,18 +1,18 @@
 body {
-    background: linear-gradient(to bottom, #00008b, #0000ff); /* Dark blue gradient bg */
-    color: #fff; /* Text color */
+    background: linear-gradient(to bottom, #00008b, #0000ff);
+    color: #fff;
     display: flex;
-    justify-content: center; /* Center content horizontally */
-    align-items: center; /* Center content vertically */
-    height: 100vh; /* Full height of viewport */
-    margin: 0; /* Remove default margin */
-    font-family: Arial, sans-serif; /* Change font */
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
 .card {
-    background-color: #000000; /* Solid white background for the card */
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 16px rgba(255, 255, 255, 0.2); /* Increased box shadow */
+    background-color: #000000;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(255, 255, 255, 0.2);
 }
 
 .square {
@@ -24,7 +24,7 @@ body {
     border-radius: 16px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
-    line-height: 100px; /* Vertically center text */
+    line-height: 100px;
 }
 
 .square:hover {
@@ -41,7 +41,7 @@ h1 {
 }
 
 .highlight {
-    color: #ffc107; /* Change color to yellow */
+    color: #ffc107;
     font-weight: bold;
     font-size: 24px;
     text-transform: uppercase;
