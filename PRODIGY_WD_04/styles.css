@@ -352,6 +352,68 @@ section p{
   text-align: justify;
 }
 
+/* Contact Section */
+
+/* Contact Section */
+.contact {
+  background-color: #f8f9fa;
+  padding: 50px 0;
+}
+
+.contact .title {
+  margin-bottom: 30px;
+}
+
+.contact form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact .form-group {
+  margin-bottom: 20px;
+}
+
+.contact form label {
+  font-weight: 600;
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"],
+.contact form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact form textarea {
+  height: 150px;
+}
+
+.contact form button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.contact form button:hover {
+  background-color: #0056b3;
+}
+
+.contact .contact-info h3 {
+  margin-bottom: 20px;
+}
+
+.contact .contact-info p {
+  margin-bottom: 10px;
+}
+
 
 /* Footer */
 
