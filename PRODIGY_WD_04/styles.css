@@ -30,10 +30,14 @@ body{
 ::-webkit-scrollbar-thumb:hover {
     background: #4070f4;
 }
+
+
 .navbar {
   position: fixed;
   width: 100%;
-  padding: 20px 0;
+  padding: 0;
+  top: 0;
+  left: 0;
   z-index: 998;
   transition: all 0.3s ease;
   background-color: rgba(255, 255, 255, 0.8);
@@ -52,7 +56,7 @@ body{
 }
 
 .navbar .navbar-brand {
-  font-weight: 900;
+  font-weight: 100;
   font-size: 40px;
   color: #0a065e;
   font-family: "Allura", cursive;
@@ -126,53 +130,6 @@ nav .navbar {
 .navbar .nav-item .nav-link:hover::before {
   width: 100%; 
 }
-
-
-nav.sticky .navbar .logo a{
-  color: #fff;
-}
-nav .navbar .menu{
-  display: flex;
-  position: relative;
-  align-items: center;
-}
-nav .navbar .menu li{
-  list-style: none;
-  margin: 0 16px;
-}
-.navbar .menu a{
-  font-size: 20px;
-  font-weight: 500;
-  color: #0E2431;
-  padding: 10px 0;
-  transition: all 0.4s ease;
-  text-decoration: none;
-}
-.navbar .menu a:hover{
-  color: #4070f4;
-  text-decoration: underline;
-}
-nav.sticky .menu a{
-  color: #FFF;
-  text-decoration: underline;
-}
-nav.sticky .menu a:hover{
-  color: #0E2431;
-  text-decoration: none;
-}
-.navbar .media-icons a{
-  color: #4070f4;
-  font-size: 20px;
-  margin: 0 10px;
-}
-nav.sticky .media-icons a{
-  color: #FFF;
-}
-/* blur effect */
-nav.blur {
-  filter: blur(5px);
-}
-
 
 /* home section styling */
 .home {
@@ -346,7 +303,7 @@ section p{
   width: 80px;
   height: 80px;
   padding: 12px;
-  border: 2px solid rgb(220, 220, 220);
+  border: 2px solid rgb(36, 35, 35);
   border-radius: 16px;
   margin-bottom: 10px;
   display: flex;
@@ -402,21 +359,9 @@ footer {
   background: #222;
   padding: 40px 0;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   font-family: 'Poppins', sans-serif;
-}
-
-footer .text {
-  color: #fff;
-  font-size: 18px;
-  text-align: center;
-}
-
-footer .text span a {
-  font-weight: 500;
-  color: #FFF;
-  text-decoration: none;
 }
 
 footer .text span a:hover {
@@ -466,39 +411,6 @@ footer .text span a:hover {
 @media (max-width: 750px) {
   nav .navbar{
     width: 90%;
-  }
-  nav .navbar .menu{
-    position: fixed;
-    left: -100%;
-    top: 0;
-    background: #0E2431;
-    height: 100vh;
-    max-width: 400px;
-    width: 100%;
-    padding-top: 60px;
-    flex-direction: column;
-    align-items: center;
-    transition: all 0.5s ease;
-  }
-  .navbar.active .menu{
-    left: 0;
-    
-  }
-  nav .navbar .menu a{
-    font-size: 23px;
-    display: block;
-    color: #fff;
-    margin: 10px 0;
-  }
-  nav.sticky .menu a:hover{
-    color: #4070f4;
-  }
-  nav .navbar .media-icons{
-    display: none;
-  }
-  nav .menu-btn,
-  .navbar .menu .cancel-btn{
-    display: block;
   }
   .home .text-two{
     font-size: 65px;
@@ -557,12 +469,12 @@ footer .text span a:hover {
   .home .social-links {
     display: block;
     text-align: center;
-    margin-top: 10px; /* Adjust margin as needed */
+    margin-top: 10px;
   }
 
   .home .social-links a {
     display: inline-block;
-    margin: 0 5px; /* Adjust margin between icons */
+    margin: 0 5px;
   }
 .home .social-links a:hover {
     transform: scale(1.2);

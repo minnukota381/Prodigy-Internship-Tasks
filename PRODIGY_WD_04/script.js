@@ -13,6 +13,18 @@ window.onscroll = function() {
   }
 }
 
+$(document).ready(function(){
+  $('.navbar-toggler').click(function(){
+    $('#navbarNav').collapse('toggle');
+  });
+  $(document).click(function(event){
+    if (!$(event.target).closest('#navbarNav').length) {
+      if ($('#navbarNav').collapse('show').length) {
+        $('#navbarNav').collapse('hide');
+      }
+    }
+  });
+});
 
 let options = {
   strings: ["Full Stack Developer", "Web Developer", "Software Developer"],
